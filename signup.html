@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <style>
+        body {
+            background-color: #222;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .signup-form {
+            margin: auto;
+            max-width: 300px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 8px;
+        }
+        .signup-form h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="url"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #444;
+            color: #fff;
+        }
+        textarea {
+            height: 60px;
+        }
+        [type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 2ch;
+            background-color: beige;
+            color: black;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-form">
+        <h1>Sign Up</h1>
+        <form id="signup-form" action="entry.php" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required/>
+            </div>
+            <div class="form-group">
+                <label for="role">Role</label>
+                <input type="text" id="role" name="role" required />
+            </div>
+            <div class="form-group">
+                <label for="ig">Instagram Handle</label>
+                <input type="text" id="ig" name="ig" required />
+            </div>
+            <div class="form-group">
+                <label for="twt">Twitter Handle</label>
+                <input type="text" id="twt" name="twt" />
+            </div>
+            <div class="form-group">
+                <label for="fb">Facebook Handle</label>
+                <input type="text" id="fb" name="fb" />
+            </div>
+            <div class="form-group">
+                <label for="li">LinkedIn URL</label>
+                <input type="url" id="li" name="li" />
+            </div>
+            <div class="form-group">
+                <label for="yt">Youtube URL</label>
+                <input type="url" id="yt" name="yt" />
+            </div>
+            <div class="form-group">
+                <label for="th">Threads Handle</label>
+                <input type="text" id="th" name="th" />
+            </div>
+            <div class="form-group">
+                <label for="snap">Snapchat URL</label>
+                <input type="url" id="snap" name="snap" />
+            </div>
+            <div class="form-group">
+                <label for="git">GitHub Handle</label>
+                <input type="text" id="git" name="git" />
+            </div>
+            <div class="form-group">
+                <label for="caption">Brief Description</label>
+                <textarea name="caption" id="caption" maxlength="200"></textarea>
+            </div>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+</body>
+</html>

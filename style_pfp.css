@@ -1,0 +1,86 @@
+.mycontainer{
+    background-color: blanchedalmond;
+    margin: auto;
+    max-width: 400px;
+    padding : 40px;
+    border-radius: 4ch;
+    margin-top: 2%;
+}
+body{
+    background: black;
+}
+.mycontainer div{
+    max-width: fit-content;
+    margin: auto;
+
+}
+img{
+    height: 150px;
+    width: 150px;
+    border-radius: 30%;
+    border: white 2px;
+}
+.mycontainer div:nth-child(5) img{
+    height: 50px;
+    width: 50px;
+    margin: 10px 20px;
+}
+
+.search{
+    background-color: black;
+    display: grid;
+    grid-template-rows: auto;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    /* box-shadow: rgb(83, 80, 12) 5px 5px; */
+}
+.search div:first-child{
+    margin-top: 40PX;
+    text-shadow: brown 2px 2px;
+    text-align: center;
+    margin-bottom: 150px;
+}
+.search div:last-child{
+    font-size: small;
+    line-height: 10px;
+    margin-top: 70px;
+    text-align: center;
+    float: auto;
+    color: white;
+}
+.search div:last-child a{
+    text-decoration: none;
+    color: burlywood
+}
+.search input{
+    height: 50px;
+    width: 250px;
+    border: none;
+    text-align: center;
+}
+.search button{
+    background-color: blanchedalmond;
+    cursor: pointer;
+    float: right;
+    height: 52px;
+    width: 50px;
+    border: none;
+}
+@media only screen and (max-width: 600px) {
+    img{
+        height: 150px;
+        width: 150px;
+        border-radius: 30%;
+    }
+    .mycontainer div:nth-child(5) img{
+        height: 30px;
+        width: 30px;
+        margin: 8px;
+    }
+    .mycontainer{ 
+        margin-top: 10%;
+        width: 200px;
+    }
+  }
